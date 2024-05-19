@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AracKiralama</string>
+    <string name="Search" />
+    <string name="action_search">Search</string>
+</resources>

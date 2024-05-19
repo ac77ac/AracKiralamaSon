@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00CCC6C6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="#DAD8D8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="137dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="onMovement"
+            android:scaleType="centerInside"
+            android:contentDescription="movements"
+            app:srcCompat="@drawable/movementss_transparent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@android:style/Widget.Material.Light.ImageButton"
+            android:layout_width="137dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:contentDescription="home"
+            app:srcCompat="@drawable/homies_transparent" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="137dp"
+            android:layout_height="100dp"
+            android:onClick="onAccount"
+            android:scaleType="centerInside"
+            android:contentDescription="account"
+            app:srcCompat="@drawable/account" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:padding="8dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:scrollbars="vertical"
+                android:visibility="invisible">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/i20"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="i20araba"
+                android:onClick="i20click"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/hyundaii20son" />
+
+            <ImageButton
+                android:id="@+id/egea"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="egeaaraba"
+                android:onClick="egeaclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/fiategeason" />
+
+            <ImageButton
+                android:id="@+id/corolla"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="corollaaraba"
+                android:onClick="corollaclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/toyotacorollason" />
+
+            <ImageButton
+                android:id="@+id/megane"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="meganearaba"
+                android:onClick="meganeclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/renaultmeganeson" />
+
+            <ImageButton
+                android:id="@+id/astra"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="astraaraba"
+                android:onClick="astraclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/opelastrason" />
+
+            <ImageButton
+                android:id="@+id/scala"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="scalaaraba"
+                android:onClick="scalaclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/skodascalason" />
+
+            <ImageButton
+                android:id="@+id/focus"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="focusaraba"
+                android:onClick="focusclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/fordfocusson" />
+
+            <ImageButton
+                android:id="@+id/chr"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="chraraba"
+                android:onClick="chrclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/toyotachrson" />
+
+            <ImageButton
+                android:id="@+id/bmw"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="216daraba"
+                android:onClick="bmwclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bmw216dson" />
+
+            <ImageButton
+                android:id="@+id/mercedes"
+                android:layout_width="411dp"
+                android:layout_height="145dp"
+                android:contentDescription="eqearaba"
+                android:onClick="mercedesclick"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/mercedeseqeson" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <SearchView
+
+        android:id="@+id/searchView"
+        android:layout_width="409dp"
+        android:layout_height="62dp"
+        android:queryHint="Arama yapmak için tıklayınız..."
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
