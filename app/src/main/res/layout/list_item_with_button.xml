@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton74"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/hyundaii20son"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton75"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/fiategeason"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton76"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/toyotacorollason"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton77"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/renaultmeganeson"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton78"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/opelastrason"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton79"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/skodascalason"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton80"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/fordfocusson"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton81"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/toyotachrson"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton82"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bmw216dson"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton83"
+                        android:layout_width="390dp"
+                        android:layout_height="150dp"
+                        android:background="@null"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/mercedeseqeson"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:text="Araç Kiralama"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+</LinearLayout>

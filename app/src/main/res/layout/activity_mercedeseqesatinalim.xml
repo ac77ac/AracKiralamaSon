@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".mercedeseqesatinalim">
 
     <LinearLayout
@@ -57,6 +58,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="Başlangıç tarihi seçin"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
@@ -67,6 +69,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="Bitiş tarihi seçin"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -77,6 +80,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="Günlük Ücret Bedeli : 1800₺"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,6 +105,7 @@
         android:id="@+id/button2"
         android:layout_width="169dp"
         android:layout_height="46dp"
+        android:backgroundTint="@color/black"
         android:onClick="Onayla"
         android:text="Onayla"
         app:layout_constraintBottom_toBottomOf="parent"

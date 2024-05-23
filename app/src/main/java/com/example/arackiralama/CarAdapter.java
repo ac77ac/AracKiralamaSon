@@ -10,10 +10,9 @@ import java.util.List;
 
 public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder>{
     private List<CarModel.Car> mData;
-    private OnItemClickListener mListener;
+    private static OnItemClickListener mListener;
     public void clear() {
         mData.clear();
-        notifyDataSetChanged();
     }
 
     public CarAdapter(List<CarModel.Car> data){
@@ -37,15 +36,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder>{
         holder.modelTextView.setText(car.getModel());
         holder.yearTextView.setText(car.getYear());
         holder.colorTextView.setText(car.getColor());
-        final int pos=position;
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(mListener != null){
-                    mListener.onItemClick(pos);
-                }
-            }
-        });
     }
 
 
@@ -56,6 +46,11 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder>{
 
     public void setCars(List<CarModel.Car> cars) {
         mData=cars;
+        notifyDataSetChanged();
+    }
+
+    public List<CarModel.Car> getCars() {
+        return mData;
     }
 
 
@@ -71,6 +66,18 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder>{
             modelTextView = itemView.findViewById(R.id.text_model);
             yearTextView = itemView.findViewById(R.id.text_year);
             colorTextView = itemView.findViewById(R.id.text_color);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (mListener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            mListener.onItemClick(position);
+                        }
+                    }
+                }
+            });
         }
     }
     public interface OnItemClickListener {

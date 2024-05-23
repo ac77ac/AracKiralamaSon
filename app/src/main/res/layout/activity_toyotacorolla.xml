@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".toyotacorolla">
 
     <TextView
@@ -37,6 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Benzin"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -45,6 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Otomatik"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -53,6 +56,7 @@
             android:layout_height="wrap_content"
             android:text="5 Yolcu"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -118,6 +122,7 @@
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
         android:onClick="satinal"
         android:text="Aracı Şimdi Kirala"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,6 +151,7 @@
             android:layout_height="wrap_content"
             android:text="2+2 Bagaj"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -154,6 +160,7 @@
             android:layout_height="wrap_content"
             android:text="Klimalı"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <TextView
@@ -162,6 +169,7 @@
             android:layout_height="wrap_content"
             android:text="5 Kapı"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 

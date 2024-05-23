@@ -1,15 +1,11 @@
 package com.example.arackiralama;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.SearchView;
-import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -71,7 +67,6 @@ import java.util.List;
             recyclerView.setVisibility(View.VISIBLE);
 
             adapter.setCars(filteredCars); // Filtrelenmiş araçları adapter'a ayarla
-            adapter.notifyDataSetChanged(); // Adapter'i güncelle
             return true;
         }
     });
@@ -90,7 +85,7 @@ import java.util.List;
             adapter.setOnItemClickListener(new CarAdapter.OnItemClickListener() {
                 @Override
                 public void onItemClick(int position) {
-                    CarModel.Car clickedCar = carModel.getCars().get(position);
+                    CarModel.Car clickedCar = adapter.getCars().get(position);
 
                     if(clickedCar.getBrand().equals("Hyundai") && clickedCar.getModel().equals("i20") && clickedCar.getYear().equals("2022") && clickedCar.getColor().equals("Fume")){
                         Intent intent=new Intent(MainActivity.this, hyundaii20.class);
@@ -120,7 +115,7 @@ import java.util.List;
                         Intent intent8=new Intent(MainActivity.this, bmw216d.class);
                         startActivity(intent8);
                     } else if (clickedCar.getBrand().equals("Mercedes") && clickedCar.getModel().equals("EQE") && clickedCar.getYear().equals("2022") && clickedCar.getColor().equals("Gri")){
-                        Intent intent9=new Intent(MainActivity.this, toyotachr.class);
+                        Intent intent9=new Intent(MainActivity.this, mercedeseqe.class);
                         startActivity(intent9);
                     }
                 }
